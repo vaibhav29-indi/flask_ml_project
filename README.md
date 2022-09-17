@@ -20,19 +20,33 @@ Check that the predict api gave correct result.
 
 
 * A link to a Trello board for the project
+
 Trello board created for project is at following link-
 https://trello.com/invite/b/wKp3WFAK/b7a4b5a9d6579116b224a538c856b7b7/project-6-building-a-ci-cd-pipeline
 
 * A link to a spreadsheet that includes the original and final project plan>
+
+The spreadsheet created for this project is at following link -
 https://docs.google.com/spreadsheets/d/1DSG9Qldd6WMHDTT18Q-bnDuP7h9Zr2wTWWCHA9TLHqA/edit?usp=sharing
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+ 
+* Architectural Diagram 
 https://lucid.app/lucidchart/5ef83246-68c8-4f47-844d-b86241611bb7/edit?viewport_loc=-166%2C-25%2C1579%2C748%2C0_0&invitationId=inv_ac55a182-bba6-4ff4-af17-b20e620822c6#
 
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+Instructions for running the Python project. 
+
+Steps to deploy this project-
+1. Configue the Azure Cloud shell in the user account
+2. Fork the repo from the github link - https://github.com/vaibhav29-indi/flask_ml_project.git in the cloud shell.
+3. Configue the ssh keys in the Azure Cloud shell using ssh-keygen -t rsa command.
+4. Deploy the code to the Azure webapp from the Cloud shell with command az webapp up -n <name of the app>
+5. Once deployed check that the files in the repo with name satring from make_azure should have execute permissions.
+6. Run the ./make_predict_azure_app.sh to get thte prediction.
+7. To setup the Azure Pipelines, create organisation in Azure DevOps and configure the service connection.
+8. Link the github repo to the Azure pipeline and make changes repo to trigger the pipeline.
+9. The commit should trigger the pipeline and lead to build and deploy job in the pipeline. 
 
 * Project running on Azure App Service
 <img width="1434" alt="Screenshot 2022-09-16 at 6 14 34 PM" src="https://user-images.githubusercontent.com/58362045/190641688-16162ff7-5817-44d9-a444-b74f05882993.png">
@@ -60,8 +74,9 @@ https://lucid.app/lucidchart/5ef83246-68c8-4f47-844d-b86241611bb7/edit?viewport_
 <img width="1435" alt="Screenshot 2022-09-16 at 6 00 32 PM" src="https://user-images.githubusercontent.com/58362045/190639140-45d17fba-f75e-4ca5-bd5f-83f6991742d4.png">
 
 
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
+* Successful prediction from deployed flask app in Azure Cloud Shell.  
 
+**Output looks like-
 vaibhav [ ~/flask_ml_project ]$ ./make_predict_azure_app.sh 
 Port: 443
 {"prediction":[20.869782939832444]}
@@ -72,10 +87,16 @@ vaibhav [ ~/flask_ml_project ]$
  
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+Currently we are incorporating the bash scripts to test te\he functionality.
+In future we could use Azure functions say for example
+a. Batch data is inserted in the blob storage
+b. Azure function is triggered and this will call the predict api of the model.
+c. The response for all the requests can be sent back to the blob storage  
 
 ## Demo 
 
-<TODO: Add link Screencast on YouTube>
+ Demo video is located at following link -
+ 
+(https://youtu.be/5g7f7RQK51I)
 
 
