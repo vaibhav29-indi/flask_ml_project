@@ -1,4 +1,4 @@
-[![Python application test with Github Actions](https://github.com/vaibhav29-indi/flask_ml_project/actions/workflows/pythonapp.yml/badge.svg?branch=main&event=status)](https://github.com/vaibhav29-indi/flask_ml_project/actions/workflows/pythonapp.yml)
+[![Python application test with Github Actions](https://github.com/vaibhav29-indi/flask_ml_project/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/vaibhav29-indi/flask_ml_project/actions/workflows/pythonapp.yml)
 
 # Overview
 
