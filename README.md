@@ -1,4 +1,5 @@
-![ Python application test with Github Actions workflow] (https://github.com/vaibhav29-indi/flask_ml_project/blob/main/.github/workflows/pythonapp.yml)
+[![ Python application test with Github Actions Actions Status] (https://github.com/vaibhav29-indi/flask_ml_project/workflows/Python application test with Github Actions/badge.svg)] (https://github.com/vaibhav29-indi/flask_ml_project/actions)
+
 # Overview
 
 This project is part of Udacity nanodegree sponsored by Shell and deals with the setting up CI/CD infrastructure on Azure. 
