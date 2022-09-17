@@ -1,4 +1,4 @@
-[![ Python application test with Github Actions Actions Status] (https://github.com/vaibhav29-indi/flask_ml_project/workflows/Python application test with Github Actions/badge.svg)] (https://github.com/vaibhav29-indi/flask_ml_project/actions)
+[![Python-application-test-with-Github-Actions Actions Status](https://github.com/vaibhav29-indi/flask_ml_project/workflows/Python-application-test-with-Github-Actions/badge.svg)](https://github.com/vaibhav29-indi/flask_ml_project/actions)
 
 # Overview
 
