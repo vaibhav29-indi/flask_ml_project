@@ -15,7 +15,5 @@ lint:
 	#pylint --disable=R,C,W1203 app.py
 	pylint --disable=R,C,W1203,W0702,W0621 app.py || pylint-exit $$? 
 
-locust:
-	locust -f locustfiles.py --headless -u 10 -r 10 -H https://flaskmlservice.azurewebsites.net
 
-all: install lint test locust
+all: install lint test 
