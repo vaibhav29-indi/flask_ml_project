@@ -88,6 +88,8 @@ vaibhav [ ~/flask_ml_project ]$
 <img width="1438" alt="Screenshot 2022-09-16 at 5 58 15 PM" src="https://user-images.githubusercontent.com/58362045/190638845-2056d6fd-17b7-4391-bd48-82dd217c0b5f.png">
 
 ## Testing with locust
+ ![Screenshot 2022-09-19 at 8 10 27 PM](https://user-images.githubusercontent.com/58362045/191045277-c11359b0-2917-485a-92cf-4bb91df80f82.png)
+
  ![Screenshot 2022-09-19 at 8 11 34 PM](https://user-images.githubusercontent.com/58362045/191044994-1b0644a4-13ff-4fd9-89dc-5269ac6c0020.png)
 
  
